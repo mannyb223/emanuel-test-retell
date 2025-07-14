@@ -36,7 +36,7 @@ async function makeRetellApiCall(endpoint, method = 'GET', body = null) {
 // --- Your Server's Endpoints ---
 
 // This endpoint now exists and matches your schema.
-app.get('/list-agents', async (req, res) => {
+app.get('/v1/list-agents', async (req, res) => {
   try {
     const agents = await makeRetellApiCall('list-agents');
     res.status(200).json(agents);
@@ -47,7 +47,7 @@ app.get('/list-agents', async (req, res) => {
 });
 
 // This endpoint also now exists and matches your schema.
-app.post('/create-call', async (req, res) => {
+app.post('/v1/create-call', async (req, res) => {
   try {
     // The body from the GPT uses 'from', 'to', 'agent_id'.
     // The Retell API needs 'from_number', 'to_number', 'agent_id'.
