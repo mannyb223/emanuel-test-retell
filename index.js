@@ -1,5 +1,5 @@
 const express = require('express');
-const Retell = require('retell-sdk');
+const Retell = require('retell-sdk').default;
 
 const app = express();
 app.use(express.json());
