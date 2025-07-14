@@ -1,13 +1,15 @@
 {
-  "name": "my-retell-api",
+  "name": "my-retell-server",
   "version": "1.0.0",
-  "description": "A simple API to control Retell.",
+  "description": "A custom server to act as an MCP URL for Retell.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "retell-sdk": "^1.2.4"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
