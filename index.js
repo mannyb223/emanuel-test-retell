@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 
 const RETELL_API_KEY = process.env.RETELL_API_KEY;
-const RETELL_API_URL = 'https://api.retellai.com/v1';
+const RETELL_API_URL = 'https://api.retellai.com';
 
 // This is a helper function to make API calls without the broken SDK.
 async function makeRetellApiCall(endpoint, method = 'GET', body = null) {
