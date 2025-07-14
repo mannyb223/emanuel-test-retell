@@ -1,16 +1,13 @@
 {
-  "name": "retell-mcp-server",
+  "name": "my-retell-api",
   "version": "1.0.0",
-  "description": "A web server to trigger Retell MCP commands.",
+  "description": "A simple API to control Retell.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "retell-sdk": "^2.1.2"
-  },
-  "engines": {
-    "node": "18.x"
+    "express": "^4.19.2",
+    "retell-sdk": "^1.2.4"
   }
 }
